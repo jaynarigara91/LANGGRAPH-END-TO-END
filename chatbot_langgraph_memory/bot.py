@@ -14,7 +14,7 @@ os.environ["TAVILY_API_KEY"] = os.getenv("TAVILY_API_KEY")
 class chatbot:
     
     def __init__(self):
-        self.llm = ChatGroq(model_name = "llama-3.3-70b-specdec")
+        self.llm = ChatGroq(model_name = "deepseek-r1-distill-llama-70b")
 
     def tool_call(self):
         tool = TavilySearchResults(max_results=2)
